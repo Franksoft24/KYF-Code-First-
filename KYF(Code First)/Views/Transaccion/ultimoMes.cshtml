@@ -1,24 +1,22 @@
 ﻿@model IEnumerable<KYF_Code_First_.Models.Transaccion>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Mes";
 }
 
-<h2>Index</h2>
+<h2>Transacciones realizadas en el ultimo mes:</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
-    /
-    @Html.ActionLink("Transacciones del ultimo mes", "ultimoMes")
+    @Html.ActionLink("Back", "Index")
 </p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Motivo.Nombre)
         </th>
-        <!--th>
+        <th>
             @Html.DisplayNameFor(model => model.Tarjeta.NumeroTarjeta)
-        </th-->
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Descripcion)
         </th>
@@ -28,7 +26,7 @@
         <th>
             @Html.DisplayNameFor(model => model.fecha)
         </th>
-        <th></th>
+        <!--th></th-->
     </tr>
 
 @foreach (var item in Model) {
@@ -36,9 +34,9 @@
         <td>
             @Html.DisplayFor(modelItem => item.Motivo.Nombre)
         </td>
-        <!--td>
+        <td>
             @Html.DisplayFor(modelItem => item.Tarjeta.NumeroTarjeta)
-        </td-->
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Descripcion)
         </td>
@@ -48,19 +46,18 @@
         <td>
             @Html.DisplayFor(modelItem => item.fecha)
         </td>
-        <td>
+        <!--td>
             @Html.ActionLink("Edit", "Edit", new { id=item.TransaccionID }) |
             @Html.ActionLink("Details", "Details", new { id=item.TransaccionID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.TransaccionID })
-        </td>
+        </td-->
     </tr>
 }
     <tr>
         <td></td>
+        <td></td>
         <td>Total:</td>
         <td>@ViewBag.MontoTotal</td>
         <td></td>
-        <td></td>
     </tr>
-
 </table>

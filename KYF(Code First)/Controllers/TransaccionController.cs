@@ -21,7 +21,21 @@ namespace KYF_Code_First_.Controllers
         public ActionResult Index()
         {
             var userName = User.Identity.GetUserName();
-            var transaccion = db.Transaccion.Include(t => t.Motivo).Include(t => t.Tarjeta).Where(t=> t.Tarjeta.Propietario==userName);
+            var transaccion = db.Transaccion.Include(t => t.Motivo).Include(t => t.Tarjeta).Where(t => t.Tarjeta.Propietario == userName);
+            var suma = db.Transaccion.Where(t => t.Tarjeta.Propietario == userName).Sum(o => o.Monto);
+            ViewBag.MontoTotal = suma;
+            return View(transaccion.ToList());
+        }
+
+        //GET: /ultimoMes/ 
+        [Authorize]
+        public ActionResult ultimoMes()
+        {
+            var userName = User.Identity.GetUserName();
+            var mesPasado = (DateTime.Now.Month - 1);
+            var transaccion = db.Transaccion.Include(t => t.Motivo).Include(t => t.Tarjeta).Where(t => t.Tarjeta.Propietario == userName && t.fecha.Month >= mesPasado);
+            var suma = db.Transaccion.Where(t => t.Tarjeta.Propietario == userName).Sum(o => o.Monto);
+            ViewBag.MontoTotal = suma;
             return View(transaccion.ToList());
         }
 

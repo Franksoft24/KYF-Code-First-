@@ -15,7 +15,7 @@ namespace KYF_Code_First_.Models
         public string Descripcion { get; set; }
         [Required]
         [Display(Name = "Monto")]
-        public string Monto { get; set; }
+        public float Monto { get; set; }
         [Required]
         [Display(Name = "Motivo")]
         public int MotivoID { get; set; }
@@ -25,7 +25,7 @@ namespace KYF_Code_First_.Models
         [Required]
         [Display(Name = "Fecha")]
         [DataType(DataType.Date)]
-        public string fecha { get; set; }
+        public System.DateTime fecha { get; set; }
 
         public virtual Motivo Motivo { get; set; }
         public virtual Tarjeta Tarjeta { get; set; }

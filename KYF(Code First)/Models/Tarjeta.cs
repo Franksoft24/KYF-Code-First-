@@ -27,7 +27,7 @@ namespace KYF_Code_First_.Models
         [Required]
         [Display(Name="Fecha de corte")]
         [DataType(DataType.Date)]
-        public string fechaCorte { get; set; }
+        public System.DateTime fechaCorte { get; set; }
 
         public virtual TarjetaTipo TarjetaTipo { get; set; }
         public virtual ICollection<Transaccion> Transaccions { get; set; }

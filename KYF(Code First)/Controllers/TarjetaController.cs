@@ -21,8 +21,8 @@ namespace KYF_Code_First_.Controllers
         public ActionResult Index()
         {
             var userName = User.Identity.GetUserName();
-            var tarjeta = db.Tarjeta.Where(b => b.Propietario == userName);
-            //var tarjeta = db.Tarjeta.Include(t => t.TarjetaTipo);
+            //var tarjeta = db.Tarjeta.Where(b => b.Propietario == userName);
+            var tarjeta = db.Tarjeta.Include(t => t.TarjetaTipo).Where(b => b.Propietario == userName);
             return View(tarjeta.ToList());
         }
 
@@ -54,12 +54,6 @@ namespace KYF_Code_First_.Controllers
         // POST: /Tarjeta/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        /*
-         *Esta parte fue editada, la original es:
-         *"TarjetaID,NumeroTarjeta,EntidadBancaria,TarjetaTipoID,Propietario,Monto"
-         *"+User.Identity.GetUserName()+"
-         *ModelState
-        */
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]

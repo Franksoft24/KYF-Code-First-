@@ -104,6 +104,5 @@ C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Sec
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).csprojResolveAssemblyReference.cache
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).dll
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).pdb

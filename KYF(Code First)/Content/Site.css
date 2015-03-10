@@ -40,3 +40,56 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+/*Todo despues de esta linea fue agregado a mano*/
+.nav-color
+{
+    background-color:#65C6BB;
+}
+.item-nav-color
+{
+    color:#fff;
+}
+.green-color
+{
+    color:#65C6BB;
+}
+section
+{
+	margin-left:10%;
+	margin-right:10%;
+	overflow:hidden;
+	width:80%;
+    margin-top:3%;
+    align-content:center;
+}
+.IndexContent
+{
+	width:98%;
+	overflow:hidden;
+    padding:1%;
+	float:left;
+	align-content:center;
+	text-align:center;
+	background-color:#65C6BB;
+    margin-bottom:1px;
+	box-shadow:0.5px 2px 1px 0px rgba(0,0,0,0.39);
+}
+.IndexContent a
+{
+    text-decoration:none;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:xx-large;
+}
+.IndexContent:hover
+{
+    background-color:#86E2D5;   
+    color:#fff;
+    font-size:xx-large;
+    text-decoration:underline;
+}
+.table th
+{
+    background-color:#6BB9F0;
+    color:#fff;
+}
