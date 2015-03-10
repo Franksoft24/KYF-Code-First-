@@ -12,6 +12,8 @@ namespace KYF_Code_First_.Models
         public int TarjetaID { get; set; }
         [Required]
         [Display(Name="Numero de Tarjeta")]
+        //[MaxLength(19)]
+        //[RegularExpression(@"[0-9]{4,4}+-[0-9]{4,4}+-[0-9]{4,4}+-[0-9]{4,4}", ErrorMessage="El numero de tarjeta insertado no es valido")]
         public string NumeroTarjeta { get; set; }
         [Required]
         [Display(Name = "Banco")]

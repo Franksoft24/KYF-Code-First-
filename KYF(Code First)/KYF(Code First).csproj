@@ -179,6 +179,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Img\Editar.png" />
+    <Content Include="Content\Img\Logo.png" />
     <Content Include="Content\Img\Registrar Transaccion .png" />
     <Content Include="Content\Img\registrarTarjeta.png" />
     <Content Include="Content\Img\Registrarte.png" />

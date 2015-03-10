@@ -106,3 +106,4 @@ C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Sec
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).dll
 C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).pdb
+C:\Users\Frankmer\Desktop\KYF(Code First)\KYF(Code First)\obj\Debug\KYF(Code First).csprojResolveAssemblyReference.cache

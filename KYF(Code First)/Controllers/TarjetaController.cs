@@ -22,7 +22,7 @@ namespace KYF_Code_First_.Controllers
         {
             var userName = User.Identity.GetUserName();
             //var tarjeta = db.Tarjeta.Where(b => b.Propietario == userName);
-            var tarjeta = db.Tarjeta.Include(t => t.TarjetaTipo).Where(b => b.Propietario == userName);
+            var tarjeta = db.Tarjeta.Include(t => t.TarjetaTipo).Where(b => b.Propietario == userName); ;
             return View(tarjeta.ToList());
         }
 
